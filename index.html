@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <div id="app">
+        <h1 v-if="ls">小于</h1>
+        <h1 v-if="!ls">大于</h1>
+    </div>
+
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el:"#app",
+            // template:'<div>{{msg}}</div>',
+            data: function () {
+                return {
+                    msg: "first Vue Demo",
+                    ls: 1>2
+                }
+            }
+        })
+    </script>
+</body>
+</html>
